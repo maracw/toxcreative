@@ -1,0 +1,29 @@
+body {
+    margin: 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+h1 {
+    margin: .5em auto;
+}
+
+/*monotone, color-tiles, and gradient*/
+.branded-background {
+    height: 150vh;
+    background-image: linear-gradient(90deg, rgba(255,255,255,1), rgba(255,0,0,0), rgba(255,0,0,0), rgba(255,255,255,1),  rgba(255,255,255,1)), url(images/color-bullseye.svg), url(images/bullseye.svg);
+}
+
+/*color-tiles only*/
+.color-bullseye {
+    height: 150vh;
+    background-image: url(images/color-bullseye.svg);
+}
+
+/*monotone and color-tiles only*/
+.active-test{
+    height: 648px;
+    width: 648px;
+    background-image: url(images/color-bullseye.svg), url(images/bullseye.svg);
+}
