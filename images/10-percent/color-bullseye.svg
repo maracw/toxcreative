@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<svg id="color-tiles" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" >
+    <style>
+        .light-blue {
+            fill:#d8deed;
+        }
+        .dark-blue {
+            fill:#4962ab;
+        }
+        .transparent {
+            opacity: 0;
+        }
+
+        .active-color {
+            fill:#4962ab;
+            opacity: 1;
+        }
+
+        path {
+            opacity: 0;
+        }
+        
+    </style>   
+
+    <defs>
+        <pattern id="color-bullseyes" x="-162" y="-162" width="648" height="648" patternUnits="userSpaceOnUse" patternTransform="scale(.10 .10)">
+            <g id="x3-y3">
+                <path class="active-color" d="M497.09,405h-11.09v74h74v-11.09c-33.94-1.76-61.15-28.97-62.91-62.91Z" />
+                <path class="transparent" d="M567,324v11.09c33.94,1.76,61.15,28.97,62.91,62.91h11.09v-74h-74Z" />
+                <path class="active-color" d="M560,335.09v-11.09h-74v74h11.09c1.76-33.94,28.97-61.15,62.91-62.91Z" />
+                <path class="transparent" d="M567,467.91v11.09h74v-74h-11.09c-1.76,33.94-28.97,61.15-62.91,62.91Z" />
+            </g>
+            <g id="x2-y2">
+                <path class="transparent" d="M335.09,405h-11.09v74h74v-11.09c-33.94-1.76-61.15-28.97-62.91-62.91Z" />
+                <path class="active-color" d="M405,324v11.09c33.94,1.76,61.15,28.97,62.91,62.91h11.09v-74h-74Z" />
+                <path class="transparent" d="M398,335.09v-11.09h-74v74h11.09c1.76-33.94,28.97-61.15,62.91-62.91Z" />
+                <path class="transparent" d="M405,467.91v11.09h74v-74h-11.09c-1.76,33.94-28.97,61.15-62.91,62.91Z" />
+            </g>
+        </pattern>
+    </defs>
+    <rect x="0" y="0" width="100%" height="100%" fill="url(#color-bullseyes)"></rect>
+</svg>

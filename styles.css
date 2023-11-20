@@ -1,29 +1,39 @@
 body {
+    /*
     margin: 2em;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    */
 }
 
 h1 {
     margin: .5em auto;
 }
 
+:root {
+    --ten-percent-logo: url(images/10-percent/color-bullseye.svg), url(images/10-percent/bullseye.svg);
+    --twenty-five-percent-logo: url(images/25-percent/color-bullseye.svg), url(images/25-percent/bullseye.svg);
+    --fifty-percent-logo: url(images/50-percent/color-bullseye.svg), url(images/50-percent/bullseye.svg);
+}
+
 /*monotone, color-tiles, and gradient*/
+.logo {
+    background-image: var(--ten-percent-logo);
+}
+
+.twenty-five-percent-logo {
+    background-image: var(--twenty-five-percent-logo);
+}
+
+.fifty-percent-logo {
+    background-image: var(--fifty-percent-logo);
+}
+
 .branded-background {
-    height: 150vh;
-    background-image: linear-gradient(90deg, rgba(255,255,255,1), rgba(255,0,0,0), rgba(255,0,0,0), rgba(255,255,255,1),  rgba(255,255,255,1)), url(images/color-bullseye.svg), url(images/bullseye.svg);
+    background-image: var(--twenty-five-percent-logo);
 }
 
-/*color-tiles only*/
-.color-bullseye {
-    height: 150vh;
-    background-image: url(images/color-bullseye.svg);
-}
-
-/*monotone and color-tiles only*/
-.active-test{
-    height: 648px;
-    width: 648px;
-    background-image: url(images/color-bullseye.svg), url(images/bullseye.svg);
+.gradient {
+    background-image: linear-gradient(30deg, rgba(255, 255, 255, 1), rgba(255, 0, 0, 0), rgba(255, 0, 0, 0), rgba(255, 255, 255, 1), rgba(255, 255, 255, 1));
 }
